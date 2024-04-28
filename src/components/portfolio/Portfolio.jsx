@@ -1,24 +1,27 @@
-import { useRef } from 'react'
-import './portfolio.scss'
-import { motion, useScroll, useSpring, useTransform } from 'framer-motion'
+import { useRef } from 'react';
+import './portfolio.scss';
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 const items = [
     {
         id: 1,
         title: "Social Media App",
         img: "/Social-Media-App.png",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis!"
+        desc: "The Social Media App project is a modern platform for seamless social networking. It features user authentication with secure JWT and bcrypt, real-time updates using Socket.io, and a responsive design built with Material-UI. The backend, powered by Node.js, employs Express for routing, bcrypt for password hashing, and MySQL for data storage. The frontend, developed with React, utilizes React Router DOM for routing, React Query for state management, and Material-UI for UI components. Additionally, Socket.io facilitates real-time communication. With a focus on user experience and efficient data management, the app offers a rich interface and real-time interaction for its users.",
+        github: 'https://github.com/SlaviHristev/React-Responsive-Social-Media-App',
     },
     {
         id: 1,
-        title: "Social Media App",
-        img: "/Social-Media-App.png",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis!"
+        title: "Blog App",
+        img: "/Blog App.png",
+        desc: "Blog App is a full-stack application built with Next.js 14, featuring a blog website. It incorporates Next.js 14, App Router, Server Actions, MongoDB, and Auth.js for authentication. Key features include user authentication with GitHub profiles, authorization for restricted routes, an admin panel for post and user management, and the ability for admins to create and delete posts. The application includes various pages such as homepage, about, contact, blog, register, login, and admin pages.",
+        github: 'https://github.com/SlaviHristev/Next.js-Full-Stack-App',
     },
     {
         id: 1,
-        title: "Social Media App",
-        img: "/Social-Media-App.png",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nobis!"
+        title: "Freelance4U",
+        img: "/Freelance4u.png",
+        desc: "Freelance4U is a platform akin to Fiverr, connecting freelancers and clients for collaboration and transactions. It offers user authentication, real-time chat, gig creation, purchasing, gig management, and responsive design features.",
+        github: 'https://github.com/SlaviHristev/React-Freelance-Website-Project',
     }
 ]
 
@@ -38,7 +41,7 @@ const Single = ({ item }) => {
                     <motion.div className="textContainer" style={{ y }}>
                         <h2 >{item.title}</h2>
                         <p>{item.desc}</p>
-                        <button>See Demo</button>
+                        <a href={item.github}><button>See Demo</button></a>
                     </motion.div>
                 </div>
             </div>
