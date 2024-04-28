@@ -10,14 +10,14 @@ const items = [
         github: 'https://github.com/SlaviHristev/React-Responsive-Social-Media-App',
     },
     {
-        id: 1,
+        id: 2,
         title: "Blog App",
         img: "/Blog App.png",
         desc: "Blog App is a full-stack application built with Next.js 14, featuring a blog website. It incorporates Next.js 14, App Router, Server Actions, MongoDB, and Auth.js for authentication. Key features include user authentication with GitHub profiles, authorization for restricted routes, an admin panel for post and user management, and the ability for admins to create and delete posts. The application includes various pages such as homepage, about, contact, blog, register, login, and admin pages.",
         github: 'https://github.com/SlaviHristev/Next.js-Full-Stack-App',
     },
     {
-        id: 1,
+        id: 3,
         title: "Freelance4U",
         img: "/Freelance4u.png",
         desc: "Freelance4U is a platform akin to Fiverr, connecting freelancers and clients for collaboration and transactions. It offers user authentication, real-time chat, gig creation, purchasing, gig management, and responsive design features.",
