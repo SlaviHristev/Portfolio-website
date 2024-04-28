@@ -1,6 +1,5 @@
 import './services.scss';
 import { motion } from 'framer-motion'
-import { Link } from 'react-scroll';
 const Services = () => {
 
 
