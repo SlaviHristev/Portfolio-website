@@ -25,13 +25,19 @@ section{
     scroll-snap-align: center;
 }
 
+@mixin mobile-smaller{
+    @media (max-width:500px) {
+        @content;
+    }
+}
+
 @mixin mobile{
     @media (max-width:738px) {
         @content;
     }
 }
 
-@mixin mobile{
+@mixin tablet{
     @media (max-width:1024px) {
         @content;
     }

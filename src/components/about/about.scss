@@ -3,9 +3,10 @@
 
 .about {
     height: 100%;
+    max-width: max-content;
     display: flex;
     justify-content: space-between;
-    
+    overflow: initial;
 
     .textContainer {
         flex: 1;
@@ -14,9 +15,18 @@
         align-items: center;
 
         @include mobile{
+            display: flex;
             align-self: center;
             text-align: center;
             flex-direction: column;
+            justify-content: center;
+        }
+        @include mobile-smaller{
+            display: flex;
+            align-self: center;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
         }
         
 
@@ -30,6 +40,12 @@
                 margin-bottom: 30px;
                 margin-top: 5px;
             }
+
+            @include mobile-smaller{
+                font-size: 30px;
+                margin-bottom: 25px;
+                margin-top: 0px;
+            }
         }
 
         .box {
@@ -42,20 +58,37 @@
                 padding: 10px;
             }
 
+            @include mobile-smaller{
+                padding: 5px;
+            }
+
             h2 {
                 font-size: 45px;
                 font-weight: 500;
                 align-self: center;
                 margin-bottom: 50px;
+
                 @include mobile{
                     font-size: 25px;
-                    margin-bottom: 10px;
+                    margin-bottom: 20px;
+                }
+                @include mobile-smaller{
+                    font-size: 20px;
+                    margin-bottom: 15px;
                 }
             }
 
             p {
                 color: gray;
                 font-size: 20px;
+
+                @include mobile{
+                    font-size: 20px;
+                }
+                @include mobile-smaller{
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
             }
         }
 

@@ -5,7 +5,7 @@ const Services = () => {
 
     const variants = {
         initial: {
-            x: -500,
+            x: -100,
             y: 100,
             opacity: 0
         },

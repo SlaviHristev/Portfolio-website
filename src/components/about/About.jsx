@@ -3,29 +3,27 @@ import { motion } from 'framer-motion'
 
 const About = () => {
 
-    const variants = {
+    const textVariants = {
         initial: {
-            x: -500,
-            y: 100,
-            opacity: 0
+            x: -100,
+            opacity: 0,
         },
         animate: {
             x: 0,
             opacity: 1,
-            y: 0,
             transition: {
                 duration: 1,
-                staggerChildren: 0.1,
-            }
-        }
-    }
+                staggerChildren: 0.2,
+            },
+        },
+    };
 
 
     return (
 
 
-        <motion.div className="about" variants={variants} initial="initial" whileInView="animate">
-            <motion.div className='textContainer' variants={variants}>
+        <motion.div className="about" variants={textVariants} initial="initial" whileInView='animate'>
+            <motion.div className='textContainer' variants={textVariants}>
                 <h1><b>About Me</b></h1>
                 <motion.div className="box" whileHover={{ background: "lightgray", color: "black" }}>
                 <p>Hello there! I'm Slavi Hristev, a passionate junior web developer with a knack for crafting engaging and interactive web experiences. Currently in my second year of studies at SoftUni, I'm dedicated to honing my skills and pushing the boundaries of what I can create with code.</p>
@@ -44,10 +42,12 @@ const About = () => {
                 </motion.div>
             </motion.div>
 
-            <motion.div className='imageContainer' variants={variants}>
+            <motion.div className='imageContainer' variants={textVariants}>
                 <img src="/dev.webp" alt="" />
             </motion.div>
         </motion.div>
+        
+        
     )
 }
 
