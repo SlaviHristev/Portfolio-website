@@ -22,6 +22,13 @@ const items = [
         img: "/Freelance4u.png",
         desc: "Freelance4U is a platform akin to Fiverr, connecting freelancers and clients for collaboration and transactions. It offers user authentication, real-time chat, gig creation, purchasing, gig management, and responsive design features.",
         github: 'https://github.com/SlaviHristev/React-Freelance-Website-Project',
+    },
+    {
+        id:4,
+        title:"SoftUni React Exam Project",
+        img: "Softuni_Exam_Project.png",
+        desc: "Project for Softuni exam, that features a modern platform for selling and buying cars. The platform offers a range of features for both logged-in and non-logged-in users, including real-time chat, post notifications, and detailed user profiles. ",
+        github: "https://github.com/SlaviHristev/SoftUni-React-Exam-Project",
     }
 ]
 
